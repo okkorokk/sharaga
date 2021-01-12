@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<p class="hello">Привет</p>
+				<p class="message">
+					Этот сайт сделан специально для <br />
+					того, чтобы тебе было проще <br />
+					генерировать свои документы
+				</p>
+			</div>
+			<div class="super-design"></div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="HowToUse">
+					<div class="HowToUseTitle">Генерировать - просто</div>
+					<div class="rule">
+						<img src="img/1.svg" alt="1" />
+						<p>Выбери нужные параметры</p>
+					</div>
+					<div class="rule">
+						<img src="img/2.svg" alt="2" />
+						<p>Заполни поля</p>
+					</div>
+					<div class="rule">
+						<img src="img/3.svg" alt="3" />
+						<p>Нажми “Сгенерировать”</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container settings_container">
+				<div class="settings">
+					<p class="settings_title">Настройки</p>
+					<div class="settings_top">
+						<select size="1" name="" id="diplomaOrCourse">
+							<option hidden="">Вид работы</option>
+							<option value="diploma">Дипломная работа</option>
+							<option value="course">Курсовая работа</option>
+						</select>
+						<select size="1" name="" id="workOrProject">
+							<option hidden="">Тип работы</option>
+							<option value="work">Работа</option>
+							<option value="project">Проект</option>
+						</select>
+						<select size="1" name="" id="titleOrTask">
+							<option hidden="">Тип документа</option>
+							<option value="title">Титульный лист</option>
+							<option value="task">Лист задания</option>
+						</select>
+					</div>
+
+					<div class="choose">
+						<select size="1" name="" id="specialty" class="specialty_input">
+							<option hidden="">Специалность</option>
+							<option
+								value="08.02.01 Строительство и эксплуатация зданий и сооружений"
+							>
+								08.02.01 Строительство и эксплуатация зданий и сооружений
+							</option>
+							<option
+								value="14.02.01 Атомные электрические станции и установки"
+							>
+								14.02.01 Атомные электрические станции и установки
+							</option>
+							<option
+								value="15.02.12 Монтаж, техническое обслуживание и ремонт промышленного оборудования (по отраслям)"
+							>
+								15.02.12 Монтаж, техническое обслуживание и ремонт промышленного
+								оборудования (по отраслям)
+							</option>
+							<option
+								value="08.02.09 Монтаж, наладка и эксплуатация электрооборудования промышленных и гражданских зданий"
+							>
+								08.02.09 Монтаж, наладка и эксплуатация электрооборудования
+								промышленных и гражданских зданий
+							</option>
+							<option value="15.02.08 Технология машиностроения">
+								15.02.08 Технология машиностроения
+							</option>
+							<option value="22.02.06 Сварочное производство">
+								22.02.06 Сварочное производство
+							</option>
+							<option
+								value="15.02.14 Оснащение средствами автоматизации технологических процессов и производств (по отраслям)"
+							>
+								15.02.14 Оснащение средствами автоматизации технологических
+								процессов и производств (по отраслям)
+							</option>
+							<option
+								value="23.02.07 Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей"
+							>
+								23.02.07 Техническое обслуживание и ремонт двигателей, систем и
+								агрегатов автомобилей
+							</option>
+							<option
+								value="38.02.01 Экономика и бухгалтерский учет (по отраслям)"
+							>
+								38.02.01 Экономика и бухгалтерский учет (по отраслям)
+							</option>
+							<option value="38.02.07 Банковское дело">
+								38.02.07 Банковское дело
+							</option>
+							<option
+								value="40.02.01 Право и организация социального обеспечения"
+							>
+								40.02.01 Право и организация социального обеспечения
+							</option>
+							<option value="09.02.05 Прикладная информатика (по отраслям)">
+								09.02.05 Прикладная информатика (по отраслям)
+							</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="container settings_container">
+				<div id="appearContainer" class="settings">
+					<div id="dop_settings_container"></div>
+				</div>
+			</div>
+			<button id="generateButton">Generate document</button>
+		</main>
+	</body>
+	<script src="node_modules/docxtemplater/build/docxtemplater.js"></script>
+	<script src="https://unpkg.com/pizzip@3.0.6/dist/pizzip.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+	<script src="https://unpkg.com/pizzip@3.0.6/dist/pizzip-utils.js"></script>
+	<script src="script/script.js"></script>
+</html>
